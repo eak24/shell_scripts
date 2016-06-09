@@ -54,8 +54,11 @@ plugins=(git)
 # User configuration
 
 export PATH="/usr/local/bin:/Users/ethankeller/.rvm/gems/ruby-2.2.2/bin:/Users/ethankeller/.rvm/gems/ruby-2.2.2@global/bin:/Users/ethankeller/.rvm/rubies/ruby-2.2.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/ethankeller/.rvm/bin"
-# export PATH="/Users/ethankeller/anaconda/bin:$PATH"
+export PATH="/Users/ethankeller/anaconda/bin:$PATH"
+export PATH="/Users/ethankeller/anaconda/pkgs/osx-64-tensorflow-0.8.0-py27_0/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
+export PYTHONPATH="/lib/python2.7/site-packages/"
 
 # FUNCTIONS PUT IN BY ETHAN
 function killport { lsof -i tcp:$1 | awk '/LISTEN/ {print $2}' | xargs kill }
